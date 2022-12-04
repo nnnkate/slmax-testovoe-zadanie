@@ -10,11 +10,24 @@
 		7AB3AC1831A32ABCD4568BEF /* Pods_Notes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C20007735EF2D73208F3FD6 /* Pods_Notes.framework */; };
 		8549D480293CEFAC00CE9158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D47F293CEFAC00CE9158 /* AppDelegate.swift */; };
 		8549D482293CEFAC00CE9158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D481293CEFAC00CE9158 /* SceneDelegate.swift */; };
-		8549D484293CEFAC00CE9158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D483293CEFAC00CE9158 /* ViewController.swift */; };
 		8549D487293CEFAC00CE9158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8549D485293CEFAC00CE9158 /* Main.storyboard */; };
 		8549D48A293CEFAC00CE9158 /* Notes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8549D488293CEFAC00CE9158 /* Notes.xcdatamodeld */; };
 		8549D48C293CEFAE00CE9158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8549D48B293CEFAE00CE9158 /* Assets.xcassets */; };
 		8549D48F293CEFAE00CE9158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8549D48D293CEFAE00CE9158 /* LaunchScreen.storyboard */; };
+		8549D4A0293CF39F00CE9158 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8549D49E293CF39F00CE9158 /* CommentCell.xib */; };
+		8549D4A1293CF39F00CE9158 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D49F293CF39F00CE9158 /* CommentCell.swift */; };
+		8549D4A3293CF3C000CE9158 /* NoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4A2293CF3C000CE9158 /* NoteView.swift */; };
+		8549D4A5293CF3D600CE9158 /* MainDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4A4293CF3D600CE9158 /* MainDataSource.swift */; };
+		8549D4A7293CF3EE00CE9158 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4A6293CF3EE00CE9158 /* MainPresenter.swift */; };
+		8549D4A9293CF40800CE9158 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4A8293CF40800CE9158 /* MainViewController.swift */; };
+		8549D4B5293CF45500CE9158 /* NoteDatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4AD293CF45500CE9158 /* NoteDatabaseManager.swift */; };
+		8549D4B6293CF45500CE9158 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4AF293CF45500CE9158 /* Comment.swift */; };
+		8549D4B7293CF45500CE9158 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4B0293CF45500CE9158 /* Note.swift */; };
+		8549D4B8293CF45500CE9158 /* NoteSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4B1293CF45500CE9158 /* NoteSection.swift */; };
+		8549D4B9293CF45500CE9158 /* CommentRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4B3293CF45500CE9158 /* CommentRealm.swift */; };
+		8549D4BA293CF45500CE9158 /* NoteRealm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4B4293CF45500CE9158 /* NoteRealm.swift */; };
+		8549D4BE293CFA8D00CE9158 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = 8549D4BD293CFA8D00CE9158 /* Realm */; };
+		8549D4C0293CFA8D00CE9158 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8549D4BF293CFA8D00CE9158 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,12 +36,23 @@
 		8549D47C293CEFAC00CE9158 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8549D47F293CEFAC00CE9158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8549D481293CEFAC00CE9158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8549D483293CEFAC00CE9158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8549D486293CEFAC00CE9158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8549D489293CEFAC00CE9158 /* Notes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notes.xcdatamodel; sourceTree = "<group>"; };
 		8549D48B293CEFAE00CE9158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8549D48E293CEFAE00CE9158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8549D490293CEFAE00CE9158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8549D49E293CF39F00CE9158 /* CommentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		8549D49F293CF39F00CE9158 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		8549D4A2293CF3C000CE9158 /* NoteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteView.swift; sourceTree = "<group>"; };
+		8549D4A4293CF3D600CE9158 /* MainDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainDataSource.swift; sourceTree = "<group>"; };
+		8549D4A6293CF3EE00CE9158 /* MainPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		8549D4A8293CF40800CE9158 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8549D4AD293CF45500CE9158 /* NoteDatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteDatabaseManager.swift; sourceTree = "<group>"; };
+		8549D4AF293CF45500CE9158 /* Comment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		8549D4B0293CF45500CE9158 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		8549D4B1293CF45500CE9158 /* NoteSection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteSection.swift; sourceTree = "<group>"; };
+		8549D4B3293CF45500CE9158 /* CommentRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentRealm.swift; sourceTree = "<group>"; };
+		8549D4B4293CF45500CE9158 /* NoteRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteRealm.swift; sourceTree = "<group>"; };
 		8F77E57D51A09FB0FE2C1341 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -37,6 +61,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8549D4C0293CFA8D00CE9158 /* RealmSwift in Frameworks */,
+				8549D4BE293CFA8D00CE9158 /* Realm in Frameworks */,
 				7AB3AC1831A32ABCD4568BEF /* Pods_Notes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -50,7 +76,6 @@
 				552675F2577E3A99EBED8132 /* Pods-Notes.debug.xcconfig */,
 				8F77E57D51A09FB0FE2C1341 /* Pods-Notes.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,16 +100,139 @@
 		8549D47E293CEFAC00CE9158 /* Notes */ = {
 			isa = PBXGroup;
 			children = (
-				8549D47F293CEFAC00CE9158 /* AppDelegate.swift */,
-				8549D481293CEFAC00CE9158 /* SceneDelegate.swift */,
-				8549D483293CEFAC00CE9158 /* ViewController.swift */,
-				8549D485293CEFAC00CE9158 /* Main.storyboard */,
+				8549D496293CF34100CE9158 /* Flow */,
+				8549D4AA293CF45500CE9158 /* Core */,
+				8549D4BB293CF48400CE9158 /* Application */,
 				8549D48B293CEFAE00CE9158 /* Assets.xcassets */,
 				8549D48D293CEFAE00CE9158 /* LaunchScreen.storyboard */,
 				8549D490293CEFAE00CE9158 /* Info.plist */,
 				8549D488293CEFAC00CE9158 /* Notes.xcdatamodeld */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		8549D496293CF34100CE9158 /* Flow */ = {
+			isa = PBXGroup;
+			children = (
+				8549D497293CF34A00CE9158 /* Main */,
+			);
+			path = Flow;
+			sourceTree = "<group>";
+		};
+		8549D497293CF34A00CE9158 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8549D49D293CF37C00CE9158 /* Cell */,
+				8549D49C293CF37400CE9158 /* View */,
+				8549D49B293CF36B00CE9158 /* DataSource */,
+				8549D49A293CF36300CE9158 /* Presenter */,
+				8549D499293CF35B00CE9158 /* ViewController */,
+				8549D498293CF35300CE9158 /* Storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8549D498293CF35300CE9158 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				8549D485293CEFAC00CE9158 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		8549D499293CF35B00CE9158 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8549D4A8293CF40800CE9158 /* MainViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8549D49A293CF36300CE9158 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8549D4A6293CF3EE00CE9158 /* MainPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8549D49B293CF36B00CE9158 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8549D4A4293CF3D600CE9158 /* MainDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		8549D49C293CF37400CE9158 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8549D4A2293CF3C000CE9158 /* NoteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8549D49D293CF37C00CE9158 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8549D49F293CF39F00CE9158 /* CommentCell.swift */,
+				8549D49E293CF39F00CE9158 /* CommentCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8549D4AA293CF45500CE9158 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8549D4AB293CF45500CE9158 /* Manager */,
+				8549D4AE293CF45500CE9158 /* Model */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8549D4AB293CF45500CE9158 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				8549D4AC293CF45500CE9158 /* DataBase */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		8549D4AC293CF45500CE9158 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				8549D4AD293CF45500CE9158 /* NoteDatabaseManager.swift */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		8549D4AE293CF45500CE9158 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8549D4AF293CF45500CE9158 /* Comment.swift */,
+				8549D4B0293CF45500CE9158 /* Note.swift */,
+				8549D4B1293CF45500CE9158 /* NoteSection.swift */,
+				8549D4B2293CF45500CE9158 /* Realm */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8549D4B2293CF45500CE9158 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				8549D4B3293CF45500CE9158 /* CommentRealm.swift */,
+				8549D4B4293CF45500CE9158 /* NoteRealm.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		8549D4BB293CF48400CE9158 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8549D481293CEFAC00CE9158 /* SceneDelegate.swift */,
+				8549D47F293CEFAC00CE9158 /* AppDelegate.swift */,
+			);
+			path = Application;
 			sourceTree = "<group>";
 		};
 		939A940C61E59D5130033E50 /* Frameworks */ = {
@@ -113,6 +261,10 @@
 			dependencies = (
 			);
 			name = Notes;
+			packageProductDependencies = (
+				8549D4BD293CFA8D00CE9158 /* Realm */,
+				8549D4BF293CFA8D00CE9158 /* RealmSwift */,
+			);
 			productName = Notes;
 			productReference = 8549D47C293CEFAC00CE9158 /* Notes.app */;
 			productType = "com.apple.product-type.application";
@@ -141,6 +293,9 @@
 				Base,
 			);
 			mainGroup = 8549D473293CEFAC00CE9158;
+			packageReferences = (
+				8549D4BC293CFA8D00CE9158 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 8549D47D293CEFAC00CE9158 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,6 +313,7 @@
 				8549D48F293CEFAE00CE9158 /* LaunchScreen.storyboard in Resources */,
 				8549D48C293CEFAE00CE9158 /* Assets.xcassets in Resources */,
 				8549D487293CEFAC00CE9158 /* Main.storyboard in Resources */,
+				8549D4A0293CF39F00CE9158 /* CommentCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,10 +366,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8549D484293CEFAC00CE9158 /* ViewController.swift in Sources */,
+				8549D4B5293CF45500CE9158 /* NoteDatabaseManager.swift in Sources */,
+				8549D4A1293CF39F00CE9158 /* CommentCell.swift in Sources */,
+				8549D4A3293CF3C000CE9158 /* NoteView.swift in Sources */,
+				8549D4B8293CF45500CE9158 /* NoteSection.swift in Sources */,
+				8549D4A7293CF3EE00CE9158 /* MainPresenter.swift in Sources */,
 				8549D480293CEFAC00CE9158 /* AppDelegate.swift in Sources */,
 				8549D482293CEFAC00CE9158 /* SceneDelegate.swift in Sources */,
+				8549D4A9293CF40800CE9158 /* MainViewController.swift in Sources */,
+				8549D4B9293CF45500CE9158 /* CommentRealm.swift in Sources */,
 				8549D48A293CEFAC00CE9158 /* Notes.xcdatamodeld in Sources */,
+				8549D4B6293CF45500CE9158 /* Comment.swift in Sources */,
+				8549D4BA293CF45500CE9158 /* NoteRealm.swift in Sources */,
+				8549D4A5293CF3D600CE9158 /* MainDataSource.swift in Sources */,
+				8549D4B7293CF45500CE9158 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -433,6 +599,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8549D4BC293CFA8D00CE9158 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8549D4BD293CFA8D00CE9158 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8549D4BC293CFA8D00CE9158 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		8549D4BF293CFA8D00CE9158 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8549D4BC293CFA8D00CE9158 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		8549D488293CEFAC00CE9158 /* Notes.xcdatamodeld */ = {
