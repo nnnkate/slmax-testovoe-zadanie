@@ -23,15 +23,44 @@ final class MainViewController: UIViewController {
     private lazy var presenter = MainPresenter(delegate: self)
     
     override func viewDidLoad() {
-        
+        super.viewDidLoad()
+        configure()
     }
     
 }
 
+// MARK: - MainPresenterDelegate
 extension MainViewController: MainPresenterDelegate {
     
     func reloadData() {
+        dataSource?.set(notes: presenter.notes)
         notesTableView.reloadData()
     }
     
 }
+
+// MARK: - MainDelegate
+extension MainViewController: MainDelegate {
+    
+}
+
+// MARK: - Configure
+extension MainViewController {
+    
+    func configure() {
+        configureDataSource()
+        configureUI()
+        presenter.getNotes()
+    }
+    
+    func configureUI() {
+        titleLabel.font = UIFont(name: "Raleway-SemiBold", size: 28)
+    }
+    
+    func configureDataSource() {
+        dataSource = MainDataSource(tableView: notesTableView)
+        dataSource?.delegate = self
+    }
+    
+}
+

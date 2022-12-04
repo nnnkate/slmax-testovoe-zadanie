@@ -39,7 +39,7 @@ final class NoteView: UIView {
     }()
     
     // - Data
-    private var noteSection: NoteSection?
+    private var note: Note?
     
     // - Delegate
     weak var delegate: NoteViewDelegate?
@@ -60,8 +60,8 @@ final class NoteView: UIView {
 // MARK: - Set
 extension NoteView {
     
-    func set(noteSection: NoteSection) {
-        self.noteSection = noteSection
+    func set(note: Note) {
+        self.note = note
     }
     
 }

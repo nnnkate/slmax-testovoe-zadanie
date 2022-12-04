@@ -14,8 +14,17 @@ final class Note {
     var subtitle: String = ""
     var date: Date?
     var comments: [Comment] = []
+    var isSelected: Bool =  false
     
     init() {}
+    
+    init(id: String, title: String, subtitle: String, date: Date?, comments: [Comment] = []) {
+        self.id = id
+        self.title = title
+        self.subtitle = subtitle
+        self.date = date
+        self.comments = comments
+    }
     
     static func fromDb(realm: NoteRealm?, commentsRealm: [CommentRealm] = []) -> Note {
         let note = Note()

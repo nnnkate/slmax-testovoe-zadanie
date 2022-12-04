@@ -7,23 +7,35 @@
 
 import UIKit
 
+protocol MainDelegate: AnyObject {
+    
+}
+
 class MainDataSource: NSObject {
     
     // - Init
     private unowned let tableView: UITableView
     
     // - Data
-    private var noteSections: [NoteSection]
+    private var notes: [Note] = []
     
     // - Delegate
-//    weak var delegate: Delegate?
+    weak var delegate:  MainDelegate?
     
     // - Lifecycle
-    init(tableView: UITableView, noteSections: [NoteSection]) {
+    init(tableView: UITableView) {
         self.tableView = tableView
-        self.noteSections = noteSections
         super.init()
         configure()
+    }
+    
+}
+
+// MARK: - Set
+extension MainDataSource {
+    
+    func set(notes: [Note]) {
+        self.notes = notes
     }
     
 }
@@ -32,11 +44,11 @@ class MainDataSource: NSObject {
 extension MainDataSource: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return noteSections.count
+        return notes.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        noteSections[section].note.comments.count
+        notes[section].comments.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -45,7 +57,8 @@ extension MainDataSource: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let noteView = NoteView()
-        noteView.set(noteSection: noteSections[section])
+        noteView.backgroundColor = .yellow
+        noteView.set(note: notes[section])
         return noteView
     }
     
