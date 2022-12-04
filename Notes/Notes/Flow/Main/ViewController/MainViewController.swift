@@ -39,8 +39,12 @@ extension MainViewController: MainPresenterDelegate {
     
 }
 
-// MARK: - MainDelegate
-extension MainViewController: MainDelegate {
+// MARK: - NoteViewDelegate
+extension MainViewController: NoteViewDelegate {
+    
+    func didSelectNote() {
+        reloadData()
+    }
     
 }
 

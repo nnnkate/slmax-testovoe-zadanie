@@ -7,10 +7,6 @@
 
 import UIKit
 
-protocol MainDelegate: AnyObject {
-    
-}
-
 class MainDataSource: NSObject {
     
     // - Init
@@ -20,7 +16,7 @@ class MainDataSource: NSObject {
     private var notes: [Note] = []
     
     // - Delegate
-    weak var delegate:  MainDelegate?
+    weak var delegate: NoteViewDelegate?
     
     // - Lifecycle
     init(tableView: UITableView) {
@@ -57,6 +53,7 @@ extension MainDataSource: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let noteView = NoteView()
+        noteView.delegate = delegate
         noteView.set(note: notes[section])
         return noteView
     }
