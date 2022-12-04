@@ -29,6 +29,7 @@
 		8549D4C0293CFA8D00CE9158 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 8549D4BF293CFA8D00CE9158 /* RealmSwift */; };
 		8549D4C4293D00D900CE9158 /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8549D4C3293D00D800CE9158 /* Raleway-SemiBold.ttf */; };
 		8549D4C6293D059600CE9158 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8549D4C5293D059600CE9158 /* AddNoteView.swift */; };
+		854C79C8293D0F8000C7D2EF /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 854C79C7293D0F7F00C7D2EF /* Raleway-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +56,7 @@
 		8549D4B4293CF45500CE9158 /* NoteRealm.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteRealm.swift; sourceTree = "<group>"; };
 		8549D4C3293D00D800CE9158 /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
 		8549D4C5293D059600CE9158 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		854C79C7293D0F7F00C7D2EF /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
 		8F77E57D51A09FB0FE2C1341 /* Pods-Notes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Notes.release.xcconfig"; path = "Target Support Files/Pods-Notes/Pods-Notes.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -242,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				8549D4C3293D00D800CE9158 /* Raleway-SemiBold.ttf */,
+				854C79C7293D0F7F00C7D2EF /* Raleway-Light.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				8549D48F293CEFAE00CE9158 /* LaunchScreen.storyboard in Resources */,
 				8549D48C293CEFAE00CE9158 /* Assets.xcassets in Resources */,
 				8549D487293CEFAC00CE9158 /* Main.storyboard in Resources */,
+				854C79C8293D0F8000C7D2EF /* Raleway-Light.ttf in Resources */,
 				8549D4A0293CF39F00CE9158 /* CommentCell.xib in Resources */,
 				8549D4C4293D00D900CE9158 /* Raleway-SemiBold.ttf in Resources */,
 			);

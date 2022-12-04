@@ -57,7 +57,6 @@ extension MainDataSource: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let noteView = NoteView()
-        noteView.backgroundColor = .yellow
         noteView.set(note: notes[section])
         return noteView
     }
@@ -93,7 +92,7 @@ private extension MainDataSource {
         registerCells()
         setupDataSource()
         if #available(iOS 15.0, *) {
-            tableView.sectionHeaderTopPadding = 0
+            tableView.sectionHeaderTopPadding = 10
         }
     }
     
