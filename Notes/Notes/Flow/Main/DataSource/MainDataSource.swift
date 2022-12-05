@@ -58,6 +58,15 @@ extension MainDataSource: UITableViewDataSource {
         return noteView
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let deleteAction = UIContextualAction(style: .destructive, title: "Удалить") {  [weak self] (contextualAction, view, boolValue) in
+            self?.delegate?.deleteNote(index: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+        let swipeActions = UISwipeActionsConfiguration(actions: [deleteAction])
+        return swipeActions
+    }
+    
 }
     
     

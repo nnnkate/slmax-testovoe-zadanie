@@ -10,6 +10,7 @@ import SnapKit
 
 protocol NoteViewDelegate: AnyObject {
     func didSelectNote()
+    func deleteNote(index: Int)
 }
 
 final class NoteView: UIView {
@@ -20,18 +21,18 @@ final class NoteView: UIView {
         view.layer.borderColor = UIColor.black.withAlphaComponent(0.2).cgColor
         view.layer.borderWidth = 1
         view.layer.cornerRadius = 5
-        let tap = UITapGestureRecognizer(target: NoteView.self, action: #selector(handleTap))
-        view.addGestureRecognizer(tap)
         return view
     }()
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Raleway-SemiBold", size: 14)
+        label.textColor = .black
         return label
     }()
     private let subtitleLabel: UILabel = {
         let label = UILabel()
         label.font = UIFont(name: "Raleway-Light", size: 8)
+        label.textColor = .black
         return label
     }()
     private let separator: UIView = {
@@ -82,7 +83,8 @@ extension NoteView {
     @objc func handleTap() {
         guard let note else { return }
         note.isSelected.toggle()
-        imageView.image = UIImage(named: note.isSelected ? "arrow_up" : "arrow_down")
+        let imageName = note.isSelected ? "arrow_up" : "arrow_down"
+        imageView.image = UIImage(named: imageName)
         delegate?.didSelectNote()
     }
     
@@ -92,8 +94,14 @@ extension NoteView {
 private extension NoteView {
     
     func configure() {
+        configureMainView()
         addSubviews()
         makeConstraints()
+    }
+    
+    func configureMainView() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(handleTap))
+        mainView.addGestureRecognizer(tap)
     }
     
     func addSubviews() {

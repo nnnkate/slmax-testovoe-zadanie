@@ -11,10 +11,10 @@ final class MainViewController: UIViewController {
     
     // - UI
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var topImageVIew: UIImageView!
-    @IBOutlet weak var bottomImageVIew: UIImageView!
+    @IBOutlet weak var topImageView: UIImageView!
+    @IBOutlet weak var bottomImageView: UIImageView!
     @IBOutlet weak var notesTableView: UITableView!
-    @IBOutlet weak var createNoteView: UIView!
+    @IBOutlet weak var addNoteView: AddNoteView!
     
     // - DataSource
     private(set) var dataSource: MainDataSource?
@@ -41,6 +41,10 @@ extension MainViewController: MainPresenterDelegate {
 
 // MARK: - NoteViewDelegate
 extension MainViewController: NoteViewDelegate {
+   
+    func deleteNote(index: Int) {
+        presenter.deleteNote(index: index)
+    }
     
     func didSelectNote() {
         reloadData()
@@ -48,22 +52,36 @@ extension MainViewController: NoteViewDelegate {
     
 }
 
+// MARK: - AddNoteViewDelegate
+extension MainViewController: AddNoteViewDelegate {
+    
+    func addNote(newNote: Note) {
+        presenter.addNote(newNote: newNote)
+    }
+  
+}
+
 // MARK: - Configure
 extension MainViewController {
     
     func configure() {
+        configureAddNoteView()
         configureDataSource()
         configureUI()
         presenter.getNotes()
     }
     
-    func configureUI() {
-        titleLabel.font = UIFont(name: "Raleway-SemiBold", size: 28)
+    func configureAddNoteView() {
+        addNoteView.delegate = self
     }
     
     func configureDataSource() {
         dataSource = MainDataSource(tableView: notesTableView)
         dataSource?.delegate = self
+    }
+    
+    func configureUI() {
+        titleLabel.font = UIFont(name: "Raleway-SemiBold", size: 28)
     }
     
 }
